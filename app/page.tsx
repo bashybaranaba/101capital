@@ -35,7 +35,7 @@ export default function Home() {
             />
           </div>
 
-          <h1 className="text-5xl font-bold text-white">
+          <h1 className="text-3xl lg:text-5xl font-bold text-white">
             PEOPLE-CENTRIC ADVISORS
             <br /> INVESTORS AND OPERATORS
           </h1>
@@ -47,63 +47,92 @@ export default function Home() {
       </div>
 
       <div className="mt-12">
-        <div className="relative z-20 flex flex-col items-center justify-center h-full text-center">
-          <h1 className="text-4xl font-bold text-black">Our team</h1>
+        <div className="relative z-20 flex flex-col items-center justify-center h-full ">
+          <div className="grid grid-cols-12 gap-4 mt-4">
+            <div className="col-span-6">
+              <div className="hidden lg:flex mt-8 py-10">
+                <div className="flex flex-col">
+                  <h1 className="text-5xl font-bold text-indigo-700">
+                    We invest growth
+                  </h1>
+                  <h1 className="text-5xl font-bold text-indigo-600">
+                    equity to foster global
+                  </h1>
+                  <h1 className="text-5xl font-bold text-indigo-500">
+                    leadership positions
+                  </h1>
 
-          <div className="grid grid-cols-4 gap-4 mt-8">
-            <div className="col-span-2 flex flex-col items-center justify-center mx-6 my-2">
-              <Avatar className="h-40 w-40">
-                <AvatarImage
-                  src="/images/stephane.jpg"
-                  alt="@shadcn"
-                  className="object-cover aspect-[1] "
-                />
-                <AvatarFallback>CN</AvatarFallback>
-              </Avatar>
-              <h2 className="text-lg font-bold mt-2">Stéphane Eboko</h2>
-              <p className="text-sm text-gray-600">
-                Co-founder and <br />
-                Managing Partner{" "}
-              </p>
+                  <h1 className="mt-6 text-2xl font-semibold text-gray-600">
+                    We have jointly managed US$ 5Bn of AUM
+                  </h1>
+
+                  <h1 className="mt-1 text-lg  text-gray-600">
+                    Our focus is on Afrocentric late stage technology companies
+                  </h1>
+                  <h1 className="mt-1 text-lg  text-gray-600">
+                    We cross-fertilise human & financial capital, and experience
+                    <br />
+                    to create value for our portfolio
+                  </h1>
+                </div>
+              </div>
             </div>
-            <div className="col-span-2 flex flex-col items-center justify-center mx-6 my-2">
-              <Avatar className="h-40 w-40 object-cover aspect-[5/6] ">
-                <AvatarImage
-                  src="/images/jessica.jpg"
-                  alt="@shadcn"
-                  className="object-cover aspect-[1] "
-                />
-                <AvatarFallback>CN</AvatarFallback>
-              </Avatar>
-              <h2 className="text-lg font-bold mt-2">Jessica Colaço</h2>
-              <p className="text-sm text-gray-600">
-                Co-founder and <br />
-                Managing Partner{" "}
-              </p>
-            </div>
-            <div className="col-span-2 flex flex-col items-center justify-center mx-6 my-2">
-              <Avatar className="h-40 w-40">
-                <AvatarImage
-                  src="/images/kris.jpg"
-                  alt="@shadcn"
-                  className="object-cover aspect-[1] "
-                />
-                <AvatarFallback>CN</AvatarFallback>
-              </Avatar>
-              <h2 className="text-lg font-bold mt-2">Kris Senanu</h2>
-              <p className="text-sm text-gray-600">General Partner</p>
-            </div>
-            <div className="col-span-2 flex flex-col items-center justify-center mx-6 my-2">
-              <Avatar className="h-40 w-40">
-                <AvatarImage
-                  src="/images/ishmael.png"
-                  alt="@shadcn"
-                  className="object-cover aspect-[1] "
-                />
-                <AvatarFallback>CN</AvatarFallback>
-              </Avatar>
-              <h2 className="text-lg font-bold mt-2">Ishmael Diaw</h2>
-              <p className="text-sm text-gray-600">General Partner</p>
+
+            <div className="col-span-12 lg:col-span-6 container">
+              <div className="grid grid-cols-4 gap-4 mt-8">
+                <div className="col-span-2 flex flex-col items-center justify-center mx-6 my-2">
+                  <Avatar className="h-36 w-36">
+                    <AvatarImage
+                      src="/images/stephane.jpg"
+                      alt="@shadcn"
+                      className="object-cover aspect-[1] "
+                    />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                  <h2 className="text-lg font-bold mt-2">Stéphane Eboko</h2>
+                  <p className="text-xs text-gray-600">
+                    Co-founder {"&"} Managing Partner
+                  </p>
+                </div>
+                <div className="col-span-2 flex flex-col items-center justify-center mx-6 my-2">
+                  <Avatar className="h-36 w-36 object-cover aspect-[5/6] ">
+                    <AvatarImage
+                      src="/images/jessica.jpg"
+                      alt="@shadcn"
+                      className="object-cover aspect-[1] "
+                    />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                  <h2 className="text-lg font-bold mt-2">Jessica Colaço</h2>
+                  <p className="text-xs text-gray-600">
+                    Co-founder {"&"} Managing Partner
+                  </p>
+                </div>
+                <div className="col-span-2 flex flex-col items-center justify-center mx-6 my-2">
+                  <Avatar className="h-36 w-36">
+                    <AvatarImage
+                      src="/images/kris.jpg"
+                      alt="@shadcn"
+                      className="object-cover aspect-[1] "
+                    />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                  <h2 className="text-lg font-bold mt-2">Kris Senanu</h2>
+                  <p className="text-xs text-gray-600">General Partner</p>
+                </div>
+                <div className="col-span-2 flex flex-col items-center justify-center mx-6 my-2">
+                  <Avatar className="h-36 w-36">
+                    <AvatarImage
+                      src="/images/ishmael.png"
+                      alt="@shadcn"
+                      className="object-cover aspect-[1] "
+                    />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                  <h2 className="text-lg font-bold mt-2">Ishmael Diaw</h2>
+                  <p className="text-xs text-gray-600">General Partner</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
