@@ -51,37 +51,55 @@ export default function Home() {
           <h1 className="text-4xl font-bold text-black">Our team</h1>
 
           <div className="grid grid-cols-4 gap-4 mt-8">
-            <div className="col-span-2 flex flex-col items-center justify-center">
-              <Avatar className="h-36 w-36">
-                <AvatarImage src="/images/stephane.jpg" alt="@shadcn" />
+            <div className="col-span-2 flex flex-col items-center justify-center mx-6 my-2">
+              <Avatar className="h-40 w-40">
+                <AvatarImage
+                  src="/images/stephane.jpg"
+                  alt="@shadcn"
+                  className="object-cover aspect-[1] "
+                />
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
               <h2 className="text-lg font-bold mt-2">Stéphane Eboko</h2>
               <p className="text-sm text-gray-600">
-                Co-founder and Managing Partner{" "}
+                Co-founder and <br />
+                Managing Partner{" "}
               </p>
             </div>
-            <div className="col-span-2 flex flex-col items-center justify-center">
-              <Avatar className="h-36 w-36 object-fit aspect-[1] ">
-                <AvatarImage src="/images/jessica.jpg" alt="@shadcn" />
+            <div className="col-span-2 flex flex-col items-center justify-center mx-6 my-2">
+              <Avatar className="h-40 w-40 object-cover aspect-[5/6] ">
+                <AvatarImage
+                  src="/images/jessica.jpg"
+                  alt="@shadcn"
+                  className="object-cover aspect-[1] "
+                />
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
               <h2 className="text-lg font-bold mt-2">Jessica Colaço</h2>
               <p className="text-sm text-gray-600">
-                Co-founder and Managing Partner{" "}
+                Co-founder and <br />
+                Managing Partner{" "}
               </p>
             </div>
-            <div className="col-span-2 flex flex-col items-center justify-center">
-              <Avatar className="h-36 w-36 object-fit aspect-[1] ">
-                <AvatarImage src="/images/kris.jpg" alt="@shadcn" />
+            <div className="col-span-2 flex flex-col items-center justify-center mx-6 my-2">
+              <Avatar className="h-40 w-40">
+                <AvatarImage
+                  src="/images/kris.jpg"
+                  alt="@shadcn"
+                  className="object-cover aspect-[1] "
+                />
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
               <h2 className="text-lg font-bold mt-2">Kris Senanu</h2>
               <p className="text-sm text-gray-600">General Partner</p>
             </div>
-            <div className="col-span-2 flex flex-col items-center justify-center">
-              <Avatar className="h-36 w-36 object-fit aspect-[1] ">
-                <AvatarImage src="/images/ishmael.png" alt="@shadcn" />
+            <div className="col-span-2 flex flex-col items-center justify-center mx-6 my-2">
+              <Avatar className="h-40 w-40">
+                <AvatarImage
+                  src="/images/ishmael.png"
+                  alt="@shadcn"
+                  className="object-cover aspect-[1] "
+                />
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
               <h2 className="text-lg font-bold mt-2">Ishmael Diaw</h2>
