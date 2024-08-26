@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -97,7 +98,7 @@ export default function Home() {
                 <div className="col-span-2 flex flex-col items-center justify-center mx-6 my-2">
                   <Avatar className="h-36 w-36 object-cover aspect-[5/6] ">
                     <AvatarImage
-                      src="/images/jessica.jpg"
+                      src="/images/jessica-photo.jpg"
                       alt="@shadcn"
                       className="object-cover aspect-[1] "
                     />
@@ -111,7 +112,7 @@ export default function Home() {
                 <div className="col-span-2 flex flex-col items-center justify-center mx-6 my-2">
                   <Avatar className="h-36 w-36">
                     <AvatarImage
-                      src="/images/kris.jpg"
+                      src="/images/kris-photo.jpg"
                       alt="@shadcn"
                       className="object-cover aspect-[1] "
                     />
@@ -123,7 +124,7 @@ export default function Home() {
                 <div className="col-span-2 flex flex-col items-center justify-center mx-6 my-2">
                   <Avatar className="h-36 w-36">
                     <AvatarImage
-                      src="/images/ishmael.png"
+                      src="/images/ishmael-photo.png"
                       alt="@shadcn"
                       className="object-cover aspect-[1] "
                     />
@@ -137,6 +138,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
