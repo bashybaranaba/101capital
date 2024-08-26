@@ -72,7 +72,7 @@ export default function Footer() {
         </div>
 
         <div className="col-span-12 lg:col-span-4">
-          <div className="flex">
+          <div className="flex items-center justify-center">
             {socialLinks.map((social, index) => (
               <Link
                 key={index}

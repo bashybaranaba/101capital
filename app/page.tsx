@@ -3,6 +3,8 @@ import { ChevronDown } from "lucide-react";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import Footer from "@/components/Footer";
+import Portfolio from "@/components/Portfolio";
+import Perspectives from "@/components/Perspectives";
 
 export default function Home() {
   return (
@@ -135,9 +137,30 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
+            <div className="lg:hidden col-span-12 flex flex-col item-center justify-center p-6 text-center">
+              <div className="flex lg:hidden mt-8 py-2">
+                <div className="flex flex-col">
+                  <h1 className="text-4xl font-bold text-indigo-700">
+                    We invest growth equity to foster global leadership
+                    positions
+                  </h1>
+                  <h1 className="mt-6 text-2xl font-semibold text-gray-600">
+                    We have jointly managed US$ 5Bn of AUM
+                  </h1>
+                  <h1 className="mt-1 text-lg  text-gray-600">
+                    Our focus is on Afrocentric late stage technology companies
+                    We cross-fertilise human & financial capital, and experience
+                    to create value for our portfolio
+                  </h1>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <Portfolio />
+      <Perspectives />
       <Footer />
     </div>
   );
