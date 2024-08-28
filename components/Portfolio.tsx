@@ -78,7 +78,7 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="flex flex-col items-cernter justify-center mt-24 mb-16">
+    <div className="flex flex-col items-center justify-center mt-24 mb-16">
       <h1 className="text-4xl font-bold text-indigo-600 text-center">
         Our portfolio
       </h1>
@@ -86,7 +86,7 @@ export default function Portfolio() {
         Our portfolio span across Fintech Mobility Energy Food Health
         Entertainment and more
       </h1>
-      <div className="container flex items-cernter justify-center mt-10 mb-10">
+      <div className="container flex items-center justify-center mt-10 mb-10">
         {portfolioItemsR1.map((item, index) => (
           <div key={index} className="">
             <div className="bg-white p-4">
@@ -101,7 +101,7 @@ export default function Portfolio() {
           </div>
         ))}
       </div>
-      <div className="container flex items-cernter justify-center mt-0">
+      <div className="container flex items-center justify-center mt-0">
         {portfolioItemsR2.map((item, index) => (
           <div key={index} className="">
             <div className="bg-white p-4">
