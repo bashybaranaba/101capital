@@ -83,7 +83,7 @@ export default function Portfolio() {
         Our portfolio
       </h1>
       <h1 className="mt-1 text-lg  text-gray-600 text-center">
-        Our portfolio span across Fintech Mobility Energy Food Health
+        Our portfolio spans across Fintech Mobility Energy Food Health
         Entertainment and more
       </h1>
       <div className="container flex items-center justify-center mt-10 mb-10">

@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 import Portfolio from "@/components/Portfolio";
 import Perspectives from "@/components/Perspectives";
 
+export const revalidate = 0;
+
 export default function Home() {
   return (
     <div>
