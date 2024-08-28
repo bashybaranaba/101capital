@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 
@@ -6,9 +7,13 @@ import Footer from "@/components/Footer";
 import Portfolio from "@/components/Portfolio";
 import Perspectives from "@/components/Perspectives";
 
-export const revalidate = 0;
-
 export default function Home() {
+  //function to handle the click event and taje the user to the team section
+  const handleClick = () => {
+    const team = document.getElementById("team");
+    team?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div>
       <div className="relative h-screen bg-gray-800">
@@ -45,13 +50,16 @@ export default function Home() {
             <br /> INVESTORS AND OPERATORS
           </h1>
 
-          <button className="mt-8 p-3 bg-indigo-600 text-white text-lg rounded-full hover:bg-blue-700 transition duration-300">
+          <button
+            onClick={handleClick}
+            className="mt-8 p-3 bg-indigo-600 text-white text-lg rounded-full hover:bg-blue-700 transition duration-300"
+          >
             <ChevronDown className="h-6 w-6" />
           </button>
         </div>
       </div>
 
-      <div className="mt-12">
+      <div className="mt-12" id="team">
         <div className="relative z-20 flex flex-col items-center justify-center h-full ">
           <div className="grid grid-cols-12 gap-4 mt-4">
             <div className="col-span-6">
@@ -128,7 +136,7 @@ export default function Home() {
                 <div className="col-span-2 flex flex-col items-center justify-center mx-6 my-2">
                   <Avatar className="h-36 w-36">
                     <AvatarImage
-                      src="/images/ishmael.png"
+                      src="/images/ishmael-comic.png"
                       alt="@shadcn"
                       className="object-cover aspect-[1] "
                     />
@@ -162,7 +170,9 @@ export default function Home() {
         </div>
       </div>
       <Portfolio />
+      <div className="m-28"></div>
       <Perspectives />
+      <div className="m-28"></div>
       <Footer />
     </div>
   );
