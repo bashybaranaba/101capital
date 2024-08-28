@@ -128,7 +128,7 @@ export default function Home() {
                 <div className="col-span-2 flex flex-col items-center justify-center mx-6 my-2">
                   <Avatar className="h-36 w-36">
                     <AvatarImage
-                      src="/images/ishmael-photo.png"
+                      src="/images/ishmael.png"
                       alt="@shadcn"
                       className="object-cover aspect-[1] "
                     />
