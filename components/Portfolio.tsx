@@ -29,12 +29,39 @@ export default function Portfolio() {
     },
   ];
 
-  const portfolioItems = [
+  const portfolioItemsR1 = [
+    {
+      title: "Portfolio item 3",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod",
+      image: "/images/mamarocks.jpg",
+    },
+    {
+      title: "Titan Air Mobility",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod",
+      image: "/images/titan.png",
+    },
+    {
+      title: "Portfolio item 4",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod",
+      image: "/images/twende.jpg",
+    },
+    {
+      title: "Portfolio item 5",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod",
+      image: "/images/hustlesasa.png",
+    },
+  ];
+
+  const portfolioItemsR2 = [
     {
       title: "Portfolio item 1",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod",
-      image: "/images/logo.png",
+      image: "/images/basi.png",
     },
     {
       title: "Portfolio item 2",
@@ -43,7 +70,7 @@ export default function Portfolio() {
       image: "/images/logo.png",
     },
     {
-      title: "Portfolio item 3",
+      title: "Portfolio item 2",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod",
       image: "/images/logo.png",
@@ -56,10 +83,11 @@ export default function Portfolio() {
         Our portfolio
       </h1>
       <h1 className="mt-1 text-lg  text-gray-600 text-center">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+        Our portfolio span across Fintech Mobility Energy Food Health
+        Entertainment and more
       </h1>
-      <div className="container flex items-cernter justify-center mt-10 mb-16">
-        {portfolioItems.map((item, index) => (
+      <div className="container flex items-cernter justify-center mt-10 mb-10">
+        {portfolioItemsR1.map((item, index) => (
           <div key={index} className="">
             <div className="bg-white p-4">
               <Image
@@ -67,7 +95,22 @@ export default function Portfolio() {
                 alt={item.title}
                 width={100}
                 height={100}
-                className="rounded-lg"
+                className="rounded-lg m-2"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="container flex items-cernter justify-center mt-0">
+        {portfolioItemsR2.map((item, index) => (
+          <div key={index} className="">
+            <div className="bg-white p-4">
+              <Image
+                src={item.image}
+                alt={item.title}
+                width={100}
+                height={100}
+                className="rounded-lg m-2"
               />
             </div>
           </div>
